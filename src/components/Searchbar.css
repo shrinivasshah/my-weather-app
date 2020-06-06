@@ -1,0 +1,62 @@
+/* .container form{
+    margin-top:3rem;
+   
+    
+}
+
+form input[name="city"],
+form input[name="country"]{
+    background-color: transparent;
+    border: 0;
+    color: white;
+    border-bottom: 2px solid whitesmoke;
+    border-radius: 0;
+}
+
+form input:focus{
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+form input
+.container::-webkit-input-placeholder{
+    color: white !important;
+} */
+
+.search-box {
+
+    width: 100%;
+    margin: 0 0 75px;
+}
+
+form{
+    display: inline-block;
+    width: 60%;
+
+    padding-top: 25px;
+}
+
+.search-box .search-bar{
+    display: block;
+    width:100%;
+    padding: 15px;
+
+    appearance: none;
+    background: none;
+    outline: none;
+    background: rgba(255,255,255,0.5);
+    border-radius: 0px 0px 16px 16px;
+    margin-top: -25px;
+
+    box-shadow: 0px 5px rgba(0,0,0,0.2);
+
+    color: #313131;
+    font-size: 20px;
+
+    transition: 0.4s ease;
+}
+
+.search-box .search-bar:focus {
+    background-color: rgba(255,255,255,0.75);
+}
+
