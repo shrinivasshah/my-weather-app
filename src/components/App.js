@@ -100,21 +100,21 @@ class App extends React.Component {
       if (icon.includes('thunderstorm')){
         return '.thunderstorm';
       }else if(icon.includes('sleet')){
-        return '.sleet'
+        return ' sleet'
       }else if(icon.includes('storm')){
-        return '.storm'
+        return ' storm'
       }else if(icon.includes('fog')){
-        return '.fog'
+        return ' fog'
       }else if(icon.includes('sunny')){
-        return '.sunny'
+        return ' sunny'
       }else{
-        return '.default'
+        return ' default'
       }
     }
 
     
     return (
-      <div className="main default">
+      <div className={` ${bgColor(this.state.icon)}`}>
         <Searchbar loadWeather={this.getWeather} error={this.state.error}/>
         <CardView
           city={this.state.city}
