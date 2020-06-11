@@ -73,7 +73,7 @@ class App extends React.Component {
     e.target.elements.city.value = ''
     if (country && city){
       const response = await axios.get(
-        `http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&units=metric&appid=${API}`
+        `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&units=metric&appid=${API}`
       );
       console.log(response);
       this.setState({
